@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAdmin - Solusi Administrasi Guru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+
+    <nav class="flex items-center justify-between px-8 py-6 bg-white shadow-sm sticky top-0 z-50">
+        <div class="text-2xl font-bold text-blue-600">EduAdmin</div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#fitur" class="hover:text-blue-600">Fitur</a>
+            <a href="#tentang" class="hover:text-blue-600">Tentang</a>
+        </div>
+        <button onclick="goToApp()" class="bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+            Buka Aplikasi
+        </button>
+    </nav>
+
+    <header class="container mx-auto px-8 py-20 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-5xl font-extrabold leading-tight mb-6">
+                Kelola Kelas Jadi <span class="text-blue-600">Lebih Ringkas</span> & Terukur.
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+                Aplikasi administrasi pendidik untuk rekap absen digital, penilaian pengetahuan, dan jurnal sikap dalam satu genggaman.
+            </p>
+            <div class="flex space-x-4">
+                <button onclick="goToApp()" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-bold shadow-lg hover:bg-blue-700">
+                    Mulai Sekarang
+                </button>
+                <button class="border border-gray-300 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100">
+                    Pelajari Fitur
+                </button>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <div class="w-full h-64 bg-blue-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-blue-300">
+                <i class="fas fa-chalkboard-teacher text-8xl text-blue-400"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="fitur" class="bg-white py-20">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12">Fitur Unggulan</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-8 rounded-xl bg-gray-50 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Absen Digital</h3>
+                    <p class="text-gray-600">Rekap kehadiran siswa secara otomatis dan ekspor data ke Excel dalam hitungan detik.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-50 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Nilai Pengetahuan</h3>
+                    <p class="text-gray-600">Input nilai tugas, kuis, dan ujian dengan perhitungan rata-rata otomatis.</p>
+                </div>
+                <div class="p-8 rounded-xl bg-gray-50 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Jurnal Sikap</h3>
+                    <p class="text-gray-600">Catat perkembangan karakter dan kejadian unik siswa secara real-time di kelas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-500 border-t">
+        <p>&copy; 2024 EduAdmin. Dirancang untuk Pendidik Indonesia.</p>
+    </footer>
+
+    <script>
+        function goToApp() {
+            alert("Menuju ke Dashboard Aplikasi (Fitur Selanjutnya)...");
+            // Nantinya ini akan diarahkan ke halaman login/dashboard
+        }
+    </script>
+</body>
+</html>
